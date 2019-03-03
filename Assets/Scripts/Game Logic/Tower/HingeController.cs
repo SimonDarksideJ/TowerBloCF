@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Fizzyo;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,7 +22,7 @@ public class HingeController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (FizzyoFramework.Instance.Device.ButtonDown())
         {
             Drop();
         }

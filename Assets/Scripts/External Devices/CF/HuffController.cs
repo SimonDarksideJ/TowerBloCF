@@ -37,7 +37,8 @@ public class HuffController : MonoBehaviour
 
     private void OnDestroy()
     {
-        Fizzyo.FizzyoFramework.Instance.Recogniser.BreathStarted -= BreathStarted;
+        //Breath Recogniser isn't being used here?
+        //Fizzyo.FizzyoFramework.Instance.Recogniser.BreathStarted -= BreathStarted;
     }
 
     private void BreathStarted(object sender)
